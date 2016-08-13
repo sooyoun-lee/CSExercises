@@ -14,14 +14,20 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.Write("Enter temperature in Centigrade: ");
+            String cenStr = Console.ReadLine();
+            double cen = Convert.ToDouble(cenStr);
+
+            double fah = ConvertToFahrenheit(cen);
+            Console.WriteLine("The temperature in Fahrenheit is {0:0}", fah);
 
         }
 
         public static double ConvertToFahrenheit(double c)
         {
+            double f = 1.8 * c + 32;
             //YOUR CODE HERE - convert celcius to fahrenheit
-            return 0;
+            return f;
 
         }
     }
