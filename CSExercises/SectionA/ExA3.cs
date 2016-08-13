@@ -14,9 +14,11 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.Write("Write an integer: ");
             string inputString = Console.ReadLine();
             int inputInt = Convert.ToInt32(inputString);
 
+            Console.WriteLine("The suquare of the number is: ");
             int result = square(inputInt);
 
             Console.WriteLine(result);
@@ -24,8 +26,10 @@ namespace CSExercises
 
         public static int square(int x)
         {
-            //PUT YOUR CODE HERE
-            return 0;
+            double squareResult = Math.Pow(x,2.0);
+            int output = Convert.ToInt32(squareResult);
+ 
+            return output;
 
         }
     }
