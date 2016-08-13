@@ -20,8 +20,10 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.Write("Write a number: ");
             string inputStr = Console.ReadLine();
             double inputDbl = Convert.ToDouble(inputStr);
+            Console.WriteLine("{0:0.00}", inputDbl);
 
             //YOUR CODE HERE
 
