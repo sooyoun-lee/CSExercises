@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace CSExercises
 {
@@ -18,14 +19,21 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.Write("Enter your salary: ");
+            string yourSalary = Console.ReadLine();
 
+            string yourIncome = CalculateIncome(yourSalary);
+            Console.WriteLine("Your income is " + yourIncome);
         }
 
         public static string CalculateIncome(string salaryStr)
         {
-            //YOUR CODE HERE
-            return null;
+            double salary = Convert.ToDouble(salaryStr);
+            double housingAllowance = 0.1 * salary;
+            double transportAllowance = 0.03 * salary;
+            double Income = salary + housingAllowance + transportAllowance;
+            string Incomestr = String.Format(CultureInfo.CreateSpecificCulture("en-US"),"{0:C}",Income);
+            return Incomestr;
         }
     }
 }
