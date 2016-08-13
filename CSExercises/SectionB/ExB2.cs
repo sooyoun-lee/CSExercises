@@ -20,14 +20,22 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.Write("Write a number: ");
+            string inputStr = Console.ReadLine();
+            double input = Convert.ToDouble(inputStr);
+
+            string output = SQRT(input);
+            Console.WriteLine("Square root of the number is {0}", output);
             //YOUR CODE HERE
         }
 
         public static string SQRT(double x)
         {
+            double sqrtResult = Math.Sqrt(x);
+            string result = String.Format("{0:0.###;-0.###;0.000}",sqrtResult);
             //YOUR CODE HERE: return the square root of x and then use String.Format 
             //to format it. The format is similar to WriteLine
-            return null;
+            return result;
 
         }
     }
