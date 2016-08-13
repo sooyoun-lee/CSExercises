@@ -15,14 +15,20 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //PUT YOUR CODE HERE           
+            Console.Write("Write a number: ");
+            string inputString = Console.ReadLine();
+            double inputnum = Convert.ToDouble(inputString);
+
+            Console.WriteLine("The suquare of the number is: ");
+            double result = square(inputnum);
+
+            Console.WriteLine(result);
         }
 
         public static double square(double x)
         {
-            //PUT YOUR CODE HERE
-            return 0;
-
+            double squareResult = Math.Pow(x, 2.0);
+            return squareResult;
         }
     }
 }
