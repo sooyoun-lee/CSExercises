@@ -18,13 +18,19 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.Write("How long is the distance traveled in km?: ");
+            string distanceStr = Console.ReadLine();
+            double distance = Convert.ToDouble(distanceStr);
+
+            double fare = CalculateFare(distance);
+            Console.WriteLine("The fare is {0}", fare);
+
         }
 
         public static double CalculateFare(double distance)
         {
-            //YOUR CODE HERE
-            return 0;
+            double fare = 2.4 + distance * 0.4;
+            return fare;
 
         }
     }
