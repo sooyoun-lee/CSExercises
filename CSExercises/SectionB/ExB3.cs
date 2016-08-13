@@ -32,7 +32,7 @@ namespace CSExercises
             double housingAllowance = 0.1 * salary;
             double transportAllowance = 0.03 * salary;
             double Income = salary + housingAllowance + transportAllowance;
-            string Incomestr = String.Format(CultureInfo.CreateSpecificCulture("en-US"),"{0:C}",Income);
+            string Incomestr = String.Format("{0:C}",Income);
             return Incomestr;
         }
     }

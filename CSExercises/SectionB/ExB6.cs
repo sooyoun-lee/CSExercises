@@ -32,7 +32,7 @@ namespace CSExercises
             double y2 = Convert.ToDouble(y2str);
 
             double distanceBtw = CalculateDistance(x1, y1, x2, y2);
-            Console.WriteLine("The distance between two points is {0}", distanceBtw);
+            Console.WriteLine("{0}", distanceBtw);
         }
 
         public static double CalculateDistance(double x1, double y1, double x2, double y2)

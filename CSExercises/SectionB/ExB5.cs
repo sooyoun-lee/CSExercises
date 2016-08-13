@@ -21,7 +21,7 @@ namespace CSExercises
             double input = Convert.ToDouble(inputStr);
 
             double output = CalculateY(input);
-            Console.WriteLine("The answer is {0:0}",output);
+            Console.WriteLine("{0}",output);
         }
 
         public static double CalculateY(double x)

@@ -32,9 +32,9 @@ namespace CSExercises
 
             double area = CalculateArea(a, b, c);
 
-            if (area > 0)
+            if (area != -1)
             {
-                Console.WriteLine("The area of the triangle is {0}", area);
+                Console.WriteLine("{0}", area);
             }
             else
             {

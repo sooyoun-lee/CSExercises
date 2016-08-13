@@ -32,7 +32,7 @@ namespace CSExercises
         public static string SQRT(double x)
         {
             double sqrtResult = Math.Sqrt(x);
-            string result = String.Format("{0:0.###;-0.###;0.000}",sqrtResult);
+            string result = String.Format("{0:0.000}",sqrtResult);
             //YOUR CODE HERE: return the square root of x and then use String.Format 
             //to format it. The format is similar to WriteLine
             return result;

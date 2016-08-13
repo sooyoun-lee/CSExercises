@@ -20,7 +20,7 @@ namespace CSExercises
             double distance = Convert.ToDouble(distanceStr);
 
             double fare = CalculateFare(distance);
-            Console.WriteLine("The fare is {0:0.00}", fare);
+            Console.WriteLine("{0:0.00}", fare);
         }
 
         public static double CalculateFare(double distance)

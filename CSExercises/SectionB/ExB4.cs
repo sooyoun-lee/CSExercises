@@ -19,7 +19,7 @@ namespace CSExercises
             double cen = Convert.ToDouble(cenStr);
 
             double fah = ConvertToFahrenheit(cen);
-            Console.WriteLine("The temperature in Fahrenheit is {0:0}", fah);
+            Console.WriteLine("The temperature in Fahrenheit is {0}", fah);
 
         }
 
