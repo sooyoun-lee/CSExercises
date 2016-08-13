@@ -21,12 +21,12 @@ namespace CSExercises
             double input = Convert.ToDouble(inputStr);
 
             double output = CalculateY(input);
-            Console.WriteLine("The answer is {0:0},output");
+            Console.WriteLine("The answer is {0:0}",output);
         }
 
         public static double CalculateY(double x)
         {
-            double y = 5 * Math.Pow(x, 2) - 4 * x + 3;
+            double y = (5 * Math.Pow(x, 2)) + (-4 * x) + 3;
 
             return y;
         }
