@@ -29,8 +29,8 @@ namespace CSExercises
         public static bool IsArmstrongNumber(int n)
         {
             int c = n % 10;
-            int b = n % 100 - c;
-            int a = (n - b - c) / 100;
+            int b = (n % 100 - c) / 10;
+            int a = ((n - b - c) / 100);
 
             if (n == Math.Pow(a,3)+ Math.Pow(b, 3)+ Math.Pow(c, 3))
             {
