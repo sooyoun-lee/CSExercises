@@ -18,7 +18,7 @@ namespace CSExercises
         {
             Console.Write("How long is the distance traveled in km?: ");
             string distanceStr = Console.ReadLine();
-            double distance = Convert.ToDouble(distanceStr);
+            double distance = Convert.ToDouble(distanceStr); 
 
             double fare = CalculateFare(distance);
             Console.WriteLine("{0:0.00}", fare);
@@ -27,8 +27,8 @@ namespace CSExercises
         public static double CalculateFare(double distance)
         {
             double fare = 2.4 + distance * 0.4;
-            double fareCeiling = Math.Ceiling(fare * 10);
-            return fareCeiling / 10;
+            double fareCeiling = Math.Ceiling(fare * 10) / 10;
+            return fareCeiling;
         }
     }
 }
