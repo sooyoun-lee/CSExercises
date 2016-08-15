@@ -18,6 +18,7 @@ namespace CSExercises
 
     public class ExA5
     {
+
         public static void Main(string[] args)
         {
             Console.Write("Write a number: ");
