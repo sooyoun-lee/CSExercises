@@ -34,7 +34,7 @@ namespace CSExercises
             double fare = 0;
             double distanceCeiling = Math.Ceiling(10 * distance) / 10;
 
-            if (distance <= 0.5)
+            if (distanceCeiling <= 0.5)
             {
                 fare = 2.40;
             }
@@ -42,11 +42,11 @@ namespace CSExercises
             {
                 if (distance <= 9)
                 {
-                    fare = ((distance / 0.1) - 5) * 0.04 + 2.40;
+                    fare = ((distanceCeiling / 0.1) - 5) * 0.04 + 2.40;
                 }
                 else
                 {
-                    fare = ((distance / 0.1) - 90) * 0.05 + (85 * 0.04) + 2.40;
+                    fare = ((distanceCeiling / 0.1) - 90) * 0.05 + (85 * 0.04) + 2.40;
                 }
             }
             return fare;
