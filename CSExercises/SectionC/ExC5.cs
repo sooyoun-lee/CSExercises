@@ -17,16 +17,29 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.Write("Enter a three-digit integer: ");
+            string numberStr = Console.ReadLine();
+            int number = Convert.ToInt32(numberStr);
 
+            bool answer = IsArmstrongNumber(number);
+            Console.WriteLine(answer);
         }
 
 
         public static bool IsArmstrongNumber(int n)
         {
-            //YOUR CODE HERE
-            return false;
+            int c = n % 10;
+            int b = n % 100 - c;
+            int a = (n - b - c) / 100;
 
+            if (n == Math.Pow(a,3)+ Math.Pow(b, 3)+ Math.Pow(c, 3))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
