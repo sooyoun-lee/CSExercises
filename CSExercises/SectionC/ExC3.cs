@@ -29,43 +29,13 @@ namespace CSExercises
         public static string CalculateGrade(int mark)
         {
             string grade = "";
-            if (mark > 100)
-            {
-                grade = "error";
-            }
-            else
-            {
-                if (mark < 0)
-                {
-                    grade = "error";
-                }
-                else
-                {
-                    if (mark >= 80)
-                    {
-                        grade = "A";
-                    }
-                    else
-                    {
-                        if (mark >= 60)
-                        {
-                            grade = "B";
-                        }
-                        else
-                        {
-                            if (mark >= 40)
-                            {
-                                grade = "C";
-                            }
-                            else
-                            {
-                                grade = "F";
-                            }
-                        }
-                    }
-                }
-            }
-              
+            if (mark > 100) grade = "error";
+            else if (mark < 0) grade = "error";
+            else if (mark >= 80) grade = "A";
+            else if (mark >= 60) grade = "B";
+            else if (mark >= 40) grade = "C";
+            else grade = "F";
+
             return grade;
         }
     }
