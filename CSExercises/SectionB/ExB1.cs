@@ -17,7 +17,7 @@ namespace CSExercises
             string inputStr = Console.ReadLine();
             double input = Convert.ToDouble(inputStr);
             double output = SQRT(input);
-            Console.WriteLine("The square root of the number is: {0:0.###;-0.###;0.00}", output);
+            Console.WriteLine("The square root of the number is: {0:0.###}", output);
         }
 
         public static double SQRT(double x)
