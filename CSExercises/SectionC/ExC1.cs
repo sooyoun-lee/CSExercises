@@ -23,7 +23,7 @@ namespace CSExercises
             {
                 title = "Ms.";
             }
-            Console.WriteLine("Good Morning {0}{1}", title, name);
+            Console.WriteLine("Good Morning {0} {1}", title, name);
         }
     }
 }
