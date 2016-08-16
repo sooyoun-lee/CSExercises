@@ -11,7 +11,7 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            for (int i = 5; i <= 1000; i++)
+            for (int i = 5; i <= 10000; i++)
             {
                 if (ExE3.IsPrime(i) == true) Console.WriteLine(i);
             }
