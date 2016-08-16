@@ -31,12 +31,24 @@ namespace CSExercises
 
         public static bool IsPalindrome(string phrase)
         {
-            //YOUR CODE HERE
-            return false;
+            string lowerPhrase = phrase.ToLower();
+            string[] groupPhrase = lowerPhrase.Split(' ','.',',');
+            string trimmedPhrase = "";
+            string comparedPhrase = "";
 
+            for (int i = 0; i < groupPhrase.Length; i++)
+            {
+                trimmedPhrase = trimmedPhrase + groupPhrase[i];
+            }
 
+            for (int i = trimmedPhrase.Length - 1; i >= 0; i--)
+            {
+                comparedPhrase = comparedPhrase + trimmedPhrase[i];
+            }
 
-
+            if (trimmedPhrase == comparedPhrase) return true;
+            else return false;
+            
         }
     }
 }

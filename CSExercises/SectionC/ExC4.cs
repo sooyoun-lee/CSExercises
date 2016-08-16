@@ -23,7 +23,6 @@ namespace CSExercises
             Console.Write("Enter the travelled distance in km: ");
             string distanceStr = Console.ReadLine();
             double distance = Convert.ToDouble(distanceStr);
-
             double fare = CalculateFare(distance);
 
             Console.WriteLine("${0:0.00}", fare);
