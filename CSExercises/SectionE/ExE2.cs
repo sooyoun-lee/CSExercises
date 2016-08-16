@@ -22,7 +22,15 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine(" NO            INVERSE        SQAURE ROOT       SQUARE");
+            Console.WriteLine("----------------------------------------------------------");
+            for (int i = 1; i <= 10; i++)
+            {
+                double inverse = 1 / i;
+                double sqrt = Math.Sqrt(i);
+                double sqaure = Math.Pow(i, 2);
+                Console.WriteLine(" {0:0.0} \t\t {1:0.0} \t\t {2:0.0##} \t\t {3:0.0}", i, inverse, sqrt, sqaure);
+            }
         }
     }
 }

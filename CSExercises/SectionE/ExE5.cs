@@ -11,11 +11,10 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
-            //Hint: you can call ExE3.IsPrime method (from previous exercise) 
-            //to check whether a number is a prime or not.
-
-
+            for (int i = 5; i <= 1000; i++)
+            {
+                if (ExE3.IsPrime(i) == true) Console.WriteLine(i);
+            }
         }
     }
 }

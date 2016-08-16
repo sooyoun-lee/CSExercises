@@ -33,10 +33,17 @@ namespace CSExercises
 
         public static bool IsPrime(int n)
         {
-            //YOUR CODE HERE
-            return false;
+            int numberOfFactors = 0;
+            for (int i = n; i >= 1; i--)
+            {
+                if (n % i == 0)
+                {
+                    numberOfFactors++;
+                }
 
-
+            }
+            if (numberOfFactors == 2) return true;
+            else return false;
         }
     }
 }
