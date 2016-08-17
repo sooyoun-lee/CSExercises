@@ -19,7 +19,30 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            string[] names = new string[] { "John", "Venkat", "Mary", "Virtor", "Betty" };
+            int[] marks = new int[] { 63, 29, 75, 82, 55 };
+
+            ExF2.Sort(marks);
+
+            for (int i = 0; i < names.Length - 1; i++)
+            {
+                for (int k = i + 1; k < names.Length; k++)
+                {
+                    if (names[i].CompareTo(names[k]) > 0)
+                    {
+                        string tmp = names[i];
+                        names[i] = names[k];
+                        names[k] = tmp;
+                    }
+                }
+            }
+
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.Write(names[i] + " ");
+            }
+
+
 
 
 
