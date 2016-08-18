@@ -22,11 +22,24 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            int[] coins = new int[] { 100, 50, 20, 10, 5 };
+            int[] numberOfCoins = new int[5];
+
             Console.Write("Enter the amount: ");
             double amount = Convert.ToDouble(Console.ReadLine());
 
-            //YOUR CODE HERE
+            amount = amount * 100;
 
+            for (int i = 0; i < coins.Length; i++)
+            {
+                while (amount - coins[i] >= coins[i])
+                {
+                    amount = amount - coins[i];
+                    numberOfCoins[i]++;
+                }
+                if (numberOfCoins[i] > 0)
+                Console.WriteLine("You need {0} of {1}-cent coins.", numberOfCoins[i], coins[i]);
+            }
 
         }
     }
