@@ -8,8 +8,14 @@
     {
         public static string Substitute(string s, char c1, char c2)
         {
-            //YOUR CODE HERE
-            return null;
+            string newString = "";
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == c1) newString = newString + c2;
+                else newString = newString + s[i];
+            }
+            return s;
         }
     }
 }
