@@ -32,7 +32,7 @@ namespace CSExercises
 
             for (int i = 0; i < coins.Length; i++)
             {
-                while (amount - coins[i] >= coins[i])
+                while (amount >= coins[i])
                 {
                     amount = amount - coins[i];
                     numberOfCoins[i]++;
